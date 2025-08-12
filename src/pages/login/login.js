@@ -44,7 +44,13 @@ export default function Login() {
         <input name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />
         <input name="phone" placeholder="Phone" value={formData.phone} onChange={handleChange} required />
         <input name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
-        <button type= "submit" style={{opacity: isFormValid() ? 1 : 0.5, cursor: isFormValid() ? 'pointer' : 'not-allowed'}} disabled={!isFormValid()}  onClick={handleSubmit}>Submit</button>
+        <button
+          type="submit"
+          style={{ opacity: isFormValid() ? 1 : 0.5, cursor: isFormValid() ? 'pointer' : 'not-allowed' }}
+          disabled={!isFormValid()}
+        >
+          Submit
+        </button>
       </form>
     </div>
   );
